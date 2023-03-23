@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.5.2",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "autoprefixer": "^10.4.14",
+    "monaco-editor": "^0.36.1",
+    "nuxt": "^3.3.1",
+    "nuxt-lodash": "^2.4.1",
+    "nuxt-monaco-editor": "^1.1.4",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.3.0",
+    "@types/bootstrap": "^5.2.6",
+    "bootstrap": "^5.2.3",
+    "highlight.js": "^11.7.0",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.1",
+    "shiki-es": "^0.2.0",
+    "vue3-runtime-template": "^1.0.2"
+  }
+}
