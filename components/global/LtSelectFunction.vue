@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import {Calculator} from '../../classes/calculator.class';
 
-function plus(a: number, b: number) {
-  return a + b;
+function plus(a: number, b: number, c:number) {
+  return a + b + c;
 }
 
 // Functions
@@ -14,8 +14,8 @@ const funcs: Record<string, any> = {
   },
   plus: {
     func: plus,
-    params: [2, 3],
-    expected: 5
+    params: [2, 3, 4],
+    expected: 9
   },
   minus: {
     func: (a: number, b: number) => {

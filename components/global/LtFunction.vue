@@ -57,6 +57,9 @@ const code = computed<string>(() => {
   }
   return functionCode;
 });
+const result = computed<any>(() => {
+  return func.value?.(...JSON.parse(paramsInput.value || '[]'));
+});
 
 </script>
 
@@ -79,7 +82,7 @@ const code = computed<string>(() => {
       <LtCode :code="code" :highlights="highlights" :language="language" :theme="theme"></LtCode>
     </div>
     <div class="card-footer" v-if="expected !== undefined">
-      <div class="text-green-600" :class="status">{{ func?.(...params) }}</div>
+      <div class="text-green-600" :class="status">{{ result }}</div>
     </div>
   </div>
 </template>
